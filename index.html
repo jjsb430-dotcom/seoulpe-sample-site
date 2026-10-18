@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>서울기술사학원 (샘플)</title>
+  <meta name="description" content="토목기사·측량·토목시공기술사 수업 안내 샘플 사이트" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">서울기술사학원</a>
+    <nav>
+      <a href="#courses">강좌</a>
+      <a href="#why">특징</a>
+      <a href="#notice">공지</a>
+      <a href="#contact">문의</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">토목 · 측량 · 기술사</p>
+      <h1>어려운 공식도<br /><span>생활 속 이야기로</span> 쉽게</h1>
+      <p class="lead">처음 배우는 사람도 흐름이 보이도록, 개념이 왜 나왔는지부터 차근차근 설명합니다.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#courses">강좌 보기</a>
+        <a class="btn ghost" href="#contact">상담 신청</a>
+      </div>
+      <p class="sample-tag">※ 이 페이지는 샘플입니다. 일정·연락처는 예시입니다.</p>
+    </section>
+
+    <section id="courses" class="section">
+      <h2>강좌 안내</h2>
+      <div class="filters" role="tablist">
+        <button class="chip active" data-filter="all">전체</button>
+        <button class="chip" data-filter="기사">기사</button>
+        <button class="chip" data-filter="기술사">기술사</button>
+      </div>
+      <div class="grid" id="course-grid"></div>
+    </section>
+
+    <section id="why" class="section">
+      <h2>수업 특징</h2>
+      <div class="grid three">
+        <div class="card feature">
+          <div class="icon">🧩</div>
+          <h3>비유로 시작</h3>
+          <p>“흙의 다짐 = 가방에 옷을 꾹꾹 눌러 담기”처럼 익숙한 장면으로 개념을 엽니다.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon">🧭</div>
+          <h3>흐름으로 연결</h3>
+          <p>개념이 왜 생겼는지 → 어떻게 쓰는지 → 시험에 어떻게 나오는지 순서로 이어 줍니다.</p>
+        </div>
+        <div class="card feature">
+          <div class="icon">✍️</div>
+          <h3>기호 하나씩</h3>
+          <p>공식이 나오면 식 전체의 뜻과 각 기호의 의미를 하나하나 풀어 설명합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="notice" class="section">
+      <h2>공지사항</h2>
+      <ul class="notice-list">
+        <li><span class="badge">개강</span><a>토목기사 필기 주말반 개강 안내 (예시)</a><time>2026.10.15</time></li>
+        <li><span class="badge gold">합격</span><a>토목시공기술사 합격을 축하합니다 (예시)</a><time>2026.10.08</time></li>
+        <li><span class="badge">안내</span><a>측량 실기 특강 일정 안내 (예시)</a><time>2026.10.01</time></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>상담 신청</h2>
+      <form id="contact-form" class="card form">
+        <label>이름<input name="name" required placeholder="홍길동" /></label>
+        <label>관심 강좌
+          <select name="course" id="course-select"></select>
+        </label>
+        <label>문의 내용<textarea name="msg" rows="3" placeholder="궁금한 점을 적어 주세요"></textarea></label>
+        <button class="btn" type="submit">신청하기</button>
+        <p id="form-result" class="form-result" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> 서울기술사학원 · 샘플 사이트</footer>
+  <script src="script.js"></script>
+</body>
+</html>
